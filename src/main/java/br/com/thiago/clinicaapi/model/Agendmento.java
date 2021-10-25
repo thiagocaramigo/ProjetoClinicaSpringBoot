@@ -25,7 +25,7 @@ public class Agendmento {
 	private Date dataConsulta;
 	
 	@Column(nullable = false)
-	private Date horaConsulta;
+	private String horaConsulta;
 	
 	@Column(nullable = false)
 	private String especialidade;
@@ -33,7 +33,7 @@ public class Agendmento {
 	public Agendmento() {
 	}
 
-	public Agendmento(Long idAgendamento, Long idPaciente, Long idMedico, Date dataConsulta, Date horaConsulta,
+	public Agendmento(Long idAgendamento, Long idPaciente, Long idMedico, Date dataConsulta, String horaConsulta,
 			String especialidade) {
 		this.idAgendamento = idAgendamento;
 		this.idPaciente = idPaciente;
@@ -75,11 +75,11 @@ public class Agendmento {
 		this.dataConsulta = dataConsulta;
 	}
 
-	public Date getHoraConsulta() {
+	public String getHoraConsulta() {
 		return horaConsulta;
 	}
 
-	public void setHoraConsulta(Date horaConsulta) {
+	public void setHoraConsulta(String horaConsulta) {
 		this.horaConsulta = horaConsulta;
 	}
 
